@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Cheila, Vargas, Mentoria, Estetica, Beleza, Clinica, Florianopolis">
+    <meta name="description" content="A WebStore Cheila Vargas traz para você as melhores novidades do mercado, através de ofertas e mentorias exclusivas.">
+    <meta name="author" content="Allison Vasconcelos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#F5D36C">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="assets/img/favicon-32x32.png">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Cheila Vargas</title>
+    <link rel="stylesheet" href="./assets/css/normlize.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="assets/js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Niconne&display=swap" rel="stylesheet">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '558592914763742');
+        fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=558592914763742&ev=PageView&noscript=1"
+      /></noscript>
+      <!-- End Facebook Pixel Code -->
+</head>
+<body>
+    <nav>
+        <img id="logo" src="assets/img/Marca (2).jpg" alt="logo bcheila vargas">
+        <h1>WebStore</h1>
+    </nav>
+    <section id="slide_cont">
+        <a id="banner1" href="mentoria.html" target="_blank" rel="noopener"><img src="assets/img/banner1.png" alt="banner mentoria cheila vargas"></a>
+        <script type="text/javascript">
+            document.getElementById('banner1').addEventListener('click', function() {
+                fbq('track', 'ViewContent', {
+                value: 400,
+                currency: 'BRL',
+                });
+            });
+            </script>
+        <a id="banner2" href="mentoria.html" target="_blank" rel="noopener"><img src="assets/img/banner-saiba.png" alt="banner mentoria cheila vargas mobile"></a>
+        <script type="text/javascript">
+            document.getElementById('banner2').addEventListener('click', function() {
+                fbq('track', 'ViewContent', {
+                value: 400,
+                currency: 'BRL',
+                });
+            });
+            </script>
+    </section>
+
+    <section id="kit_oferta">
+        <h1>CONFIRA AS NOSSAS OFERTAS ESPECIAIS</h1>
+        <div class="card">
+            <h1 class="esplados">KIT NANO HAIR GROWT</h1>
+            <h2 class="esplados">da Ecco´s Cosméticos</h2>
+            <div class="cardcont">
+                <img class="item_card" id="image_kit"  src="assets/img/img index/kit_nano_hair.png" alt="kit de shampoo e condicionado">
+                <div class="pricebox">
+                    <h2>R$379 à vista</h2>
+                    <h2>R$408,71</h2>
+                    <h3>em 4x no cartão</h3>
+                    <div class="item_card" class="boxHeader">
+                        <form target="pagseguro" method="post" action="https://pagseguro.uol.com.br/v2/checkout/cart.html?action=add">  
+                  
+                            <!-- Campos obrigatórios -->  
+                            <input type="hidden" name="receiverEmail" value="cheila.vargas@hotmail.com">  
+                            <input type="hidden" name="currency" value="BRL">  
+                            
+                            <!-- Itens do pagamento (ao menos um item é obrigatório) -->  
+                            <input type="hidden" name="itemId" value="0002">  
+                            <input type="hidden" name="itemDescription" value="KIT NANO HAIR GROWTH">  
+                            <input type="hidden" name="itemAmount" value="379.60">  
+                            <input type="hidden" name="itemQuantity" value="1">  
+                            <input type="hidden" name="itemWeight" value="0">
+                            
+                            <!-- Código de referência do pagamento no seu sistema (opcional) -->  
+                            <input type="hidden" name="reference" value="REFkitcheila">  
+                            
+                            <!-- submit do form (obrigatório) -->  
+                            <input id="kitNanoHair" class="botcompra" type="submit" name="submit" value="Compre agora!" onclick="carrinho()"> 
+                            <script type="text/javascript">
+                                document.getElementById('kitNanoHair').addEventListener('click', function() {
+                                    fbq('track', 'AddToCart', {
+                                    value: 379,
+                                    currency: 'BRL',
+                                    });
+                                });
+                                </script>
+                        </form>
+                    </div>  
+                </div>
+            </div>
+            <h3 class="descProd">A linha possui produtos ultra concentrados com fatores de crescimento e a avançada tecnologia das nanopartículas de ação fortificante. Essa tecnologia Internacional atua diretamente no bulbo capilar, aumentando o fluxo vascular do couro cabeludo, por conta de suas propriedades antioxidantes. O resultado disso é fortalecimento capilar, renovação celular, nutrição do couro cabeludo, estímulo da vitalidade e estímulo da proliferação do folículo.</h3>  
+        </div>
+    </section>
+
+
+
+
+    <!--section 2-->
+    <section id="kit_oferta2">
+        <div class="card2">
+            <h1 class="esplados">KIT DESINTOXI (CHÁ + CÁPSULAS)</h1>
+            <h2 class="esplados">da Ecco´s Cosméticos</h2>
+            <div class="cardcont">
+                <img class="item_card" id="image_kit2" src="assets/img/img index/desintoxi.png" alt="kit de chá e capsulas desintoxi">
+                <div class="pricebox">
+                    <h2>R$185 à vista</h2>
+                    <h2>R$199,04</h2>
+                    <h3>em 4x no cartão</h3>
+                    <div class="item_card" class="boxHeader">
+                        <form target="pagseguro" method="post" action="https://pagseguro.uol.com.br/v2/checkout/cart.html?action=add">  
+          
+                            <!-- Campos obrigatórios -->  
+                            <input type="hidden" name="receiverEmail" value="cheila.vargas@hotmail.com">  
+                            <input type="hidden" name="currency" value="BRL">  
+                              
+                            <!-- Itens do pagamento (ao menos um item é obrigatório) -->  
+                            <input type="hidden" name="itemId" value="0003">  
+                            <input type="hidden" name="itemDescription" value="KIT DESINTOXY - CHA + CAPSULAS">  
+                            <input type="hidden" name="itemAmount" value="185.00">  
+                            <input type="hidden" name="itemQuantity" value="1">  
+                            <input type="hidden" name="itemWeight" value="0">
+                    
+                            <!-- Código de referência do pagamento no seu sistema (opcional) -->  
+                            <input type="hidden" name="reference" value="REFkitcheila">  
+                              
+                            <!-- submit do form (obrigatório) -->  
+                            <input id="botdensintoxi" class="botcompra" type="submit" name="submit" value="Compre agora!" onclick="carrinho()">  
+                            <script type="text/javascript">
+                                document.getElementById('botdensintoxi').addEventListener('click', function() {
+                                    fbq('track', 'AddToCart', {
+                                    value: 185,
+                                    currency: 'BRL',
+                                    });
+                                });
+                                </script>
+                        </form>
+
+                    </div>  
+                </div>
+            </div>
+            <h3 class="descProd2">Que tal tornar sua rotina saudável e detox? Com o Desintoxi a sua vida saudável ganha força: afinal são 24 ativos que, juntos, trazem o equilíbrio entre o corpo e a mente. Além disso, aqueles probleminhas básicos como retenção de líquido, má digestão, intestino preguiçoso, falta de disposição e compulsão por comida são eliminados com esse kit de chá e cápsulas. Não é milagre... é Desintoxi.</h3>  
+       
+       
+            <div class="cardcontind">
+                <p class="titlecardind">Ou compre individualmente</p>
+                <div class="contind">
+                    <div class="cardind">
+                        <img class="imgitemind" src="assets/img/img index/cha.png" alt="Produto chá desintoxi">
+                        <p class="precoindcardtitle">CHÁ DESINTOXI</p>
+                        <p class="precoindcard">R$99,90 à vista</p>
+                        <p class="precoindcard">R$107,48 <span class="textprecoindcard">em 4x no cartão</span></p>
+                        <form target="pagseguro" method="post" action="https://pagseguro.uol.com.br/v2/checkout/cart.html?action=add">  
+          
+                            <!-- Campos obrigatórios -->  
+                            <input type="hidden" name="receiverEmail" value="cheila.vargas@hotmail.com">  
+                            <input type="hidden" name="currency" value="BRL">  
+                              
+                            <!-- Itens do pagamento (ao menos um item é obrigatório) -->  
+                            <input type="hidden" name="itemId" value="0004">  
+                            <input type="hidden" name="itemDescription" value="DESINTOXY CHA">  
+                            <input type="hidden" name="itemAmount" value="99.90">  
+                            <input type="hidden" name="itemQuantity" value="1">  
+                            <input type="hidden" name="itemWeight" value="0">
+                            
+                            <!-- Código de referência do pagamento no seu sistema (opcional) -->  
+                            <input type="hidden" name="reference" value="REFkitcheila">  
+                              
+                            <!-- submit do form (obrigatório) -->  
+                            <input id="botcha" class="botcomprasmall" type="submit" name="submit" value="Compre agora!" onclick="carrinho()">  
+                            <script type="text/javascript">
+                                document.getElementById('botcha').addEventListener('click', function() {
+                                    fbq('track', 'AddToCart', {
+                                    value: 99,
+                                    currency: 'BRL',
+                                    });
+                                });
+                                </script>
+                        </form>
+                    </div>
+  
+                        <div class="cardind">
+                            <img class="imgitemind"  src="assets/img/img index/capsula.png" alt="Produto cápsulas desintoxi">
+                            <p class="precoindcardtitle">CÁPSULAS DESINTOXI</p>
+                            <p class="precoindcard">R$99,90 à vista</p>
+                            <p class="precoindcard">R$107,48 <span class="textprecoindcard"> em 4x no cartão</span></p>
+                            <form target="pagseguro" method="post" action="https://pagseguro.uol.com.br/v2/checkout/cart.html?action=add">  
+          
+                                <!-- Campos obrigatórios -->  
+                                <input type="hidden" name="receiverEmail" value="cheila.vargas@hotmail.com">  
+                                <input type="hidden" name="currency" value="BRL">  
+                                  
+                                <!-- Itens do pagamento (ao menos um item é obrigatório) -->  
+                                <input type="hidden" name="itemId" value="0005">  
+                                <input type="hidden" name="itemDescription" value="DESINTOXY CAPSULAS">  
+                                <input type="hidden" name="itemAmount" value="99.90">  
+                                <input type="hidden" name="itemQuantity" value="1">  
+                                <input type="hidden" name="itemWeight" value="0">
+                                
+                                <!-- Código de referência do pagamento no seu sistema (opcional) -->  
+                                <input type="hidden" name="reference" value="REFkitcheila">  
+                                  
+                                <!-- submit do form (obrigatório) -->  
+                                <input id="botcap" class="botcomprasmall" type="submit" name="submit" value="Compre agora!" onclick="carrinho()">  
+                                <script type="text/javascript">
+                                    document.getElementById('botcap').addEventListener('click', function() {
+                                        fbq('track', 'AddToCart', {
+                                        value: 99,
+                                        currency: 'BRL',
+                                        });
+                                    });
+                                    </script>
+                            </form>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <!--section 3-->
+    <section id="kit_oferta3">
+        <div class="card3">
+            <h1 class="esplados">NANO VITA C </h1>
+            <h2 class="esplados">da Ecco´s Cosméticos</h2>
+            <div class="cardcont">
+                <img class="item_card" id="image_kit3" src="assets/img/img index/kitvitac.png" alt="kit de vitaC">
+                <div class="pricebox3">
+                        <a class="botcompra" href="#Escolha">Quero comprar!</a>  
+                </div>
+            </div>
+            <h3 class="descProd3">Sérum ultra concentrado de Vitamina C à 25% com fatores de crescimento. Totalmente estabilizado com avançada tecnologia de nanopartículas. Promove maior permeação e disponibiliza a Vitamina C de forma gradativa e profunda. Associado com Ácido Hialurônico, Silícios Orgânicos e Nano Resveratrol, este produto promove máxima ação anti-aging e antioxidante.</h3>  
+       
+       
+            <div id="Escolha" class="cardcontind">
+                <p class="titlecardind">Escolha o produto</p>
+                <div class="contind">
+                    <div class="cardind">
+                        <img class="imgitemind3 ajustevitac30" src="assets/img/img index/vitac30.png" alt="Produto vitaC 30ml">
+                        <p class="precoindcardtitle">NANO VITA C 30ml</p>
+                        <p class="precoindcard">R$149,90 à vista</p>
+                        <p class="precoindcard">R$161,28 <span class="textprecoindcard">em 4x no cartão</span></p>
+                        <form target="pagseguro" method="post" action="https://pagseguro.uol.com.br/v2/checkout/cart.html?action=add">  
+                            <form target="pagseguro" method="post" action="https://pagseguro.uol.com.br/v2/checkout/cart.html?action=add">  
+          
+                                <!-- Campos obrigatórios -->  
+                                <input type="hidden" name="receiverEmail" value="cheila.vargas@hotmail.com">  
+                                <input type="hidden" name="currency" value="BRL">  
+                                  
+                                <!-- Itens do pagamento (ao menos um item é obrigatório) -->  
+                                <input type="hidden" name="itemId" value="0006">  
+                                <input type="hidden" name="itemDescription" value="NANO VITA C 30ml">  
+                                <input type="hidden" name="itemAmount" value="149.90">  
+                                <input type="hidden" name="itemQuantity" value="1">  
+                                <input type="hidden" name="itemWeight" value="30">
+                                
+                                
+                            
+                                <!-- Código de referência do pagamento no seu sistema (opcional) -->  
+                                <input type="hidden" name="reference" value="REFkitcheila">  
+                                  
+                                <!-- submit do form (obrigatório) -->  
+                                <input id="botvitac30" class="botcomprasmall" type="submit" name="submit" value="Compre agora!" onclick="carrinho()">  
+                                <script type="text/javascript">
+                                    document.getElementById('botvitac30').addEventListener('click', function() {
+                                        fbq('track', 'AddToCart', {
+                                        value: 149,
+                                        currency: 'BRL',
+                                        });
+                                    });
+                                    </script>
+                            </form>
+                    </div>
+  
+                        <div class="cardind">
+                            <img class="imgitemind3 ajustevitac55"  src="assets/img/img index/vitac55.png" alt="Produto vitaC 55ml">
+                            <p class="precoindcardtitle">NANO VITA C 55ml</p>
+                            <p class="precoindcard">R$199,90 à vista</p>
+                            <p class="precoindcard">R$215,07 <span class="textprecoindcard"> em 4x no cartão</span></p>
+                            <form target="pagseguro" method="post" action="https://pagseguro.uol.com.br/v2/checkout/cart.html?action=add">  
+          
+                                <!-- Campos obrigatórios -->  
+                                <input type="hidden" name="receiverEmail" value="cheila.vargas@hotmail.com">  
+                                <input type="hidden" name="currency" value="BRL">  
+                                  
+                                <!-- Itens do pagamento (ao menos um item é obrigatório) -->  
+                                <input type="hidden" name="itemId" value="0007">  
+                                <input type="hidden" name="itemDescription" value="NANO VITA C 55ml">  
+                                <input type="hidden" name="itemAmount" value="199.90">  
+                                <input type="hidden" name="itemQuantity" value="1">  
+                                <input type="hidden" name="itemWeight" value="55">
+                                
+                                
+                            
+                                <!-- Código de referência do pagamento no seu sistema (opcional) -->  
+                                <input type="hidden" name="reference" value="REFkitcheila">  
+                                  
+                                <!-- submit do form (obrigatório) -->  
+                                <input id="botvitac55" class="botcomprasmall" type="submit" name="submit" value="Compre agora!" onclick="carrinho()">  
+                                <script type="text/javascript">
+                                    document.getElementById('botvitac55').addEventListener('click', function() {
+                                        fbq('track', 'AddToCart', {
+                                        value: 199,
+                                        currency: 'BRL',
+                                        });
+                                    });
+                                    </script>
+                            </form>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <footer id="footerm">
+        <h1 class="textofooter">ACOMPANHE AS NOSSAS<br>
+           REDES SOCIAIS!
+        </h1>
+        <div id="cont_footer">
+           <a id="facebook" class="itemfooterm" href="https://www.facebook.com/cheilavargasestetica/" target="_blank" rel="noopener"><img src="assets/img/facebook2.svg"  alt="Logo facebook"></a>
+           <script type="text/javascript">
+              document.getElementById('facebook').addEventListener('click', function() {
+                  fbq('track', 'FindLocation');
+              }, false);
+           </script>
+           <a id="instagram" class="itemfooterm"  href="https://www.instagram.com/cheilavargasestetica/" target="_blank" rel="noopener"><img src="assets/img/instagram2.svg" alt="Logo instagram"></a>
+           <script type="text/javascript">
+              document.getElementById('instagram').addEventListener('click', function() {
+                  fbq('track', 'FindLocation');
+              }, false);
+           </script>   
+           <a id="youtube" class="itemfooterm"  href="https://www.youtube.com/channel/UC3WVfxf1FJLJUuNPGK4X5_w" target="_blank" rel="noopener"><img src="assets/img/youtube.svg" alt="Logo youtube"></a>
+           <script type="text/javascript">
+              document.getElementById('youtube').addEventListener('click', function() {
+                  fbq('track', 'FindLocation');
+              }, false);
+           </script>
+        </div>
+     </footer>
+
+
+<div id="storecart">
+    <a  href="https://pagseguro.uol.com.br/v2/checkout/cart.html?action=view"> <img id="cart" src="assets/img/images.png" alt="Ver carrinho"/></a>
+    <span id="alerta">!</span>
+</div>
+
+<a id="whatsappBot" href="https://api.whatsapp.com/send?phone=5548996153077&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20produtos" target="blank"><p style="display: none;">Whatsapp</p><img src="assets/img/wppPc.png" alt="logo whatsapp" class="wppbotpc"></a>
+<script type="text/javascript">
+    document.getElementById('whatsappBot').addEventListener('click', function() {
+        fbq('track', 'Contact');
+    }, false);
+</script>
+
+
+<a id="whatsappBotmob" href="https://api.whatsapp.com/send?phone=5548996153077&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20produtos" target="blank"><p style="display: none;">Whatsapp</p><img src="assets/img/whats1.png" alt="logo whatsapp" class="wppbot"></a>
+<script type="text/javascript">
+    document.getElementById('whatsappBotmob').addEventListener('click', function() {
+        fbq('track', 'Contact');
+    }, false);
+ </script>
+
+</body>
+</html>

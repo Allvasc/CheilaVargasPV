@@ -1,0 +1,672 @@
+@font-face {
+    font-family: Photoshoot;
+    src: url("../css/Photoshoot.otf") format("opentype");
+}
+@font-face {
+    font-family: Poppins-Bold;
+    src: url("../css/Poppins-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: Poppins-Regular;
+    src: url("../css/Poppins-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url("../css/Poppins-SemiBold.otf") format("opentype");
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Baloo Chettan 2', cursive !important;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey; 
+    border-radius: 20px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #184242;
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+      background:#F5D36C;
+  }
+#storecart{
+    position: fixed;
+    top:86%;
+    z-index: 999;
+    left: 1%;
+}
+#cart{
+    max-width: 60px;
+    border-radius: 50%;
+    border:3px solid black;
+}
+#alerta{
+    z-index: 9999;
+    background-color: darkgreen;
+    color: #fff;
+    border-radius: 20px;
+    padding: 1px 10px;
+    left: -30px;
+    top:5px;
+    position: relative;
+    visibility: hidden;
+}
+#mentoria{
+    background-color: #e7cf78;
+    margin: 0;
+}
+#mentoria h2{
+    margin: 0 auto;
+    padding: 20px;
+}
+#saiba_mais{
+    width: 100%;
+    margin: 50px auto;
+    cursor: pointer;
+}
+.botment{
+    margin: 50px auto;
+    position: relative;
+}
+.botment:hover{
+    background-color: rgb(71, 133, 133);
+    transition: 0.5s;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+#logo{
+    max-width: 200px;
+    margin: 10px auto;
+}
+#logom{
+    width: 300px;
+    margin: 10px auto;
+}
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+    min-height: 80vh;
+}
+.image_mentoria{
+    max-width: 100%;
+    margin: auto -20px;
+}
+
+
+#slide_cont a {
+    margin: 0;
+    padding: 0;
+}
+#slide_cont a img{
+    width: 100%;
+    margin: 0;
+}
+nav h1{
+    font-family: 'Photoshoot', cursive;
+    font-size: 2em;
+    margin: 10px auto;
+    text-align: center;
+    color:#173e3e;
+}
+/*Slideshow*/
+* {
+   box-sizing: border-box;
+}
+#depoimentos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F5D36C;
+    min-height: 100vh;
+}
+#depoimentos h2{
+    font-size: 2.5rem;
+    font-family: Poppins-regular;
+    font-weight: lighter !important;
+    color: #184242;
+    margin:50px auto 20px auto;
+}
+#depcont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+    flex-wrap: wrap;
+}
+#depcont div{
+    margin: 10px auto 10px auto;
+}
+.video{
+    margin: auto 10px;
+}
+.active {
+    background-color: #717171;
+}
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+       opacity: .4
+   }
+    to {
+       opacity: 1
+   }
+}
+@keyframes fade {
+    from {
+       opacity: .4
+   }
+    to {
+       opacity: 1
+   }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+       font-size: 11px
+   }
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    background-color: rgba(245, 245, 245, 0.671);
+    padding: 30px;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    text-align: left;
+    margin: 30px auto;
+}
+.item_card{
+    margin: auto;
+}
+.ajuste_card{
+    max-width: 500px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#f4d97e;
+    color:#4a695b;
+    text-align: center;
+}
+footer h1{
+    font-size: 2.5em;
+}
+#cont_footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+#cont_footer img{
+    width: 50px;
+    margin: 10px 30px;
+}
+
+
+.wppbotpc {
+    position: fixed;
+    top: 90vh;
+    left: 68vw;
+    z-index: 9999 !important;
+    max-width: 30%;
+    cursor: pointer;
+}
+.wppbot {
+    position: fixed;
+    top: 90vh;
+    left: 68vw;
+    display: none;
+    z-index: 9999 !important;
+    max-width: 30%;
+    cursor: pointer;
+    display: none;
+}
+.show {
+    visibility: visible !important;
+    transition: 0.5s;
+}
+.hide {
+    visibility: hidden;
+}
+/* The Modal (background) */
+.modal {
+    display: none;
+   /* Hidden by default */
+    position: fixed;
+   /* Stay in place */
+    z-index: 999;
+   /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+   /* Full width */
+    height: 100%;
+   /* Full height */
+    overflow: auto;
+   /* Enable scroll if needed */
+    background-color: rgb(0,0,0);
+   /* Fallback color */
+    background-color: rgba(0,0,0,0.4);
+   /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #e7cf78;
+    margin: auto;
+   /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 90%;
+   /* Could be more or less, depending on screen size */
+    animation-name: modalanima;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+}
+.mentoria{
+    background-color: #184242;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: -4px;
+    padding: 10px;
+    font-family: Poppins-Regular;
+    font-size: 25px;
+    color: #fff;
+}
+#cont_mentoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: auto;
+    font-size: 35px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.item_mentoria{
+    display: inline;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+#box1{
+    width: 580px;
+    padding: 0px 20px;
+    margin: auto;
+}
+#box2{
+    margin-top: 100px;
+}
+.lotus{
+    width: 300px;
+}
+#text_mentoria{
+    width: 80%;
+    font-size: 30px;
+    font-weight: lighter !important;
+    margin: auto;
+}
+#text_mentoria span{
+    font-family: Poppins-SemiBold;
+}
+#cont_alvo{
+    font-family: Poppins-Regular;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: 30px auto;
+    flex-wrap: wrap;
+}
+.item_alvo{
+    margin: auto;
+}
+.item_alvo img{
+    width: 250px;
+}
+.box_alvo2{
+    width: 600px;
+}
+.quadro_mentoria{
+    background-color: #F5D36C;
+    width: 80%;
+    border-radius: 15px;
+    color: #184242;
+    text-align: center;
+    margin: 20px auto;
+}
+.quadro_mentoria p{
+    padding: 0px 40px;
+    font-size: 30px;
+}
+.cont_bot{
+    padding: 30px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botao_mentoria{
+    padding: 10px 20px;
+    margin: 30px auto;
+    background-color: #3DC530;
+    text-decoration: none;
+    color:#fff;
+    border:5px solid #fff;
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.664) -3px 3px, inset rgb(255, 255, 255) 1px 1px 10px;
+}
+
+.botao_mentoria:hover{
+    position: relative;
+    box-shadow: none;
+    left: -3px;
+    top:3px;
+}
+
+#cont_vanta{
+    width: 80%;
+}
+.item_vant{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+    flex-wrap: wrap;
+}
+.item_vant img{
+    width: 150px;
+}
+.item_vant p{
+    font-size: 1.8rem;
+    width: 850px;
+}
+.texto_mentoria2{
+    width: 80%;
+}
+.texto_mentoria2 h3{
+    font-size: 2.5rem;
+}
+.texto_mentoria2 p{
+    font-size: 2.1rem;
+    font-family: Poppins-regular;
+    font-weight: lighter !important;
+}
+.item_mentoria2{
+    color:#F5D36C;
+    font-family: Poppins-bold !important;
+    font-weight: bold !important;
+}
+#cont_cheila{
+    text-align: left;
+    margin: 10px;
+    width:70%;
+}
+#banner2{
+    display: none;
+}
+.card_video{
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 5px;
+    font-family: Poppins-regular;
+}
+.nome_card{
+    font-size:1.5rem;
+    color:#F5D36C;
+    font-weight: lighter !important;
+    margin: 10px auto;
+}
+.card_video_info{
+    background-color: #184242;
+    padding:3px;
+    width: 95%;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #fff;
+    font-weight: lighter !important;
+}
+#sec7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+}
+#sec7 h2{
+    font-size: 2.5rem;
+    font-family: Poppins-regular;
+    font-weight: lighter !important;
+    color: #184242;
+}
+#container_fac{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#container_fac img{
+    width:25%;
+}
+#container_fac p{
+    font-size: 2rem;
+    font-family: Myriad;
+    font-weight: lighter;
+    width: 600px;
+    text-align: left;
+    font-family: Poppins-regular;
+}
+.itemfac{
+    margin: 30px auto;
+}
+.textofooter{
+    font-size: 2.5rem;
+    font-family: Poppins-regular;
+    font-weight: lighter !important;
+    color: #184242;
+    text-align: center ;
+}
+#footerm{
+    flex-wrap: wrap;
+    min-height: 50vh;
+}
+.itemfooterm{
+    margin: auto;
+    width: 100px !important;
+}
+.itemfooterm img{
+    width: 80px !important;
+}
+@media only screen and (max-width: 1150px) {
+    .image_mentoria{
+        max-width: 100%;
+        margin: auto ;
+   }
+}
+@media only screen and (max-width: 1150px) {
+    #box2{
+        margin: 30px auto;
+   }
+}
+@media only screen and (max-width: 800px) {
+    .wppbot {
+        top: 88vh;
+        left: 90vw;
+        width: 60px;
+        display: block;
+   }
+    .wppbotpc {
+        display: none;
+   }
+}
+@media only screen and (max-width: 700px) {
+    #logo{
+        max-width: 300px;
+        margin: 10px auto;
+   }
+}
+@media only screen and (max-width: 650px) {
+    .card{
+        text-align: center;
+   }
+    .image_mentoria{
+        max-width: 100%;
+   }
+}
+@media only screen and (max-width: 600px) {
+    .wppbot {
+        top: 88vh;
+        left: 85vw;
+   }
+    .wppbotpc {
+        display: none;
+   }
+    #container_fac p{
+        width: 500px;
+   }
+}
+@media only screen and (max-width: 500px) {
+    .wppbot {
+        top: 88vh;
+        left: 83 vw;
+        max-width: 20%;
+   }
+    .wppbotpc {
+        display: none;
+   }
+    #container_fac p{
+        width: 400px;
+   }
+}
+@media only screen and (max-width: 450px) {
+    .wppbot {
+        top: 88vh;
+        left: 83vw;
+        max-width: 20%;
+   }
+    .solo_card img{
+        width: 80%;
+   }
+    #banner1{
+        display:none;
+   }
+    #banner2{
+        display: block;
+   }
+    #logom{
+        width: 300px;
+   }
+    .lotus{
+        width: 200px;
+   }
+    .item_alvo img{
+        width: 200px;
+   }
+}
+@media only screen and (max-width: 375px) {
+    body{
+        text-align: left;
+   }
+    .wppbot {
+        top: 88vh;
+        left: 78vw;
+   }
+    .wppbotpc {
+        display: none;
+   }
+    #image_kit{
+        max-width: 100%;
+   }
+    .video{
+        max-width: 350px;
+   }
+    .itemfooterm{
+        margin: auto;
+   }
+    .itemfooterm img{
+        width: 60px !important;
+   }
+    #container_fac p{
+        width: 300px;
+   }
+    #cont_alvo{
+        justify-content: center;
+        margin: auto;
+   }
+    .item_vant{
+        justify-content: center;
+   }
+    #container_fac img{
+        width:50%;
+   }
+    .quadro_mentoria p{
+        padding: 0px 10px;
+        font-size: 30px;
+        text-align: center;
+        font-size: 1.8rem;
+   }
+   .itemfooterm{
+    margin: auto;
+    }
+    .itemfooterm img{
+    width: 60px !important;
+}
+}
+@media only screen and (max-width: 350px) {
+    .wppbot {
+        top: 88vh;
+        left: 78vw;
+        max-width: 20%;
+   }
+    .wppbotpc {
+        display: none;
+   }
+    .video{
+        max-width: 300px;
+   }
+    .texto_mentoria2 h3{
+        font-size: 2rem;
+   }
+    .itemfooterm img{
+        width: 50px !important;
+   }
+}
